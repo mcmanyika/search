@@ -9,8 +9,8 @@ import { useToast } from "@/hooks/use-toast";
 
 // Mock database - in a real app, this would be an API call
 const mockDatabase = {
-  "John Doe": "+1 (555) 123-4567",
-  "Jane Smith": "+1 (555) 987-6543",
+  "Larry": "+1 (555) 123-4567",
+  "Mr Easy": "+1 (555) 987-6543",
   "Alice Johnson": "+1 (555) 246-8135",
   "Easy Larry": "+1 (555) 246-8135",
 };
