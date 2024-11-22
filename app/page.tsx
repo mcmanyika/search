@@ -22,7 +22,11 @@ export default function Home() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const phone = mockDatabase[name as keyof typeof mockDatabase];
+    const searchName = name.toLowerCase();
+    
+    const phone = Object.entries(mockDatabase).find(
+      ([key]) => key.toLowerCase() === searchName
+    )?.[1];
     
     if (phone) {
       setResult(phone);
